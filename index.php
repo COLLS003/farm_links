@@ -17,39 +17,110 @@ if(strpos($text, "*")){
 }
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
-    $response  = "CON Welcome to Farmlinks select a product category Sell\n";
+   if($phoneNumber == "+254794940160"){ //farmere startup menu
+    $response  = "CON Welcome to Farmlinks select an option Sell\n";
     $response .= "1. Cerials\n"; //maize, beans, millet, sorhum
     $response .= "2. Fruits\n";    // mangoes, avacados, pineapples, 
-    $response .= "2. Vegetable\n"; //kales, tomatoes, onions
+    $response .= "3. Vegetable\n"; //kales, tomatoes, onions
+
+   }else if($phoneNumber == "+254720319532"){ //distributor accounut
+    $response  = "CON Welcome to Farmlinks select an option to continue\n";
+    $response .= "1. Edit Availability\n"; //maize, beans, millet, sorhum
+    $response .= "2. Change Location\n";    // mangoes, avacados, pineapples, 
+    $response .= "3. Deregister\n"; //kales, tomatoes, onions
 
 
-} else if ($text == "1") {
-    // Business logic for first level response
-    $response = "CON Select am Item to continue\n";
-    $response .= "1. Maize\n"; //maize, beans, millet, sorhum
-    $response .= "3. Beans\n";    // mangoes, avacados, pineapples, 
-    $response .= "4. Millet\n"; //kales, tomatoes, onions
-    $response .= "5. sorghum\n"; //kales, tomatoes, onions
+   }else if($phoneNumber == "+254748804536"){ //buyer
+    $response  = "CON Welcome to Farmlinks select an option buy\n";
+    $response .= "1. Cerials\n"; //maize, beans, millet, sorhum
+    $response .= "2. Fruits\n";    // mangoes, avacados, pineapples, 
+    $response .= "3. Vegetable\n"; //kales, tomatoes, onions
+
+   }
+
+} 
+else if ($text == "1") {
+
+
+
+    if($phoneNumber == "+254794940160"){ //farmere second  menu
+        $response = "CON Select am Item to continue\n";
+        $response .= "1. Maize\n"; //maize, beans, millet, sorhum
+        $response .= "3. Beans\n";    // mangoes, avacados, pineapples, 
+        $response .= "4. Millet\n"; //kales, tomatoes, onions
+        $response .= "5. sorghum\n"; //kales, tomatoes, onions
+    
+    
+    
+    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+        $response  = "CON Enter your new Availability ie 2pm to  6 pm\n";
+       
+    
+    }else if($phoneNumber == "+254748804536"){ //buyer
+        $response  = "CON select an option to continue \n";
+        $response .= "1. Maize a kg @ 100\n"; //maize, beans, millet, sorhum
+        $response .= "2. Beans a kg @ 100\n";    // mangoes, avacados, pineapples, 
+        $response .= "2. sorghum a kg @ 20\n"; //kales, tomatoes, onions
+    
+    }
+   
 
 
 } else if ($text == "2") {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = "CON Select am Item to continue\n";
-    $response .= "1. Mamngoes\n"; //maize, beans, millet, sorhum
-    $response .= "2. Avacados\n";    // mangoes, avacados, pineapples, 
-    $response .= "3. Pineaple\n"; //kales, tomatoes, onions
-    $response .= "4. Oranges\n"; //kales, tomatoes, onions
+    if($phoneNumber == "+254794940160"){ //farmere second  menu
+        $response = "CON Select am Item to continue\n";
+        $response .= "1. Mamngoes\n"; //maize, beans, millet, sorhum
+        $response .= "2. Avacados\n";    // mangoes, avacados, pineapples, 
+        $response .= "3. Pineaple\n"; //kales, tomatoes, onions
+        $response .= "4. Oranges\n"; //kales, tomatoes, onions
+    
+    
+    
+    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+        $response  = "CON Enter new location county, constintuency\n";
+       
+    
+    }else if($phoneNumber == "+254748804536"){ //buyer
+        $response = "CON Select am Item to continue\n";
+        $response .= "1. Mamngoes at 200 a crate\n"; //maize, beans, millet, sorhum
+        $response .= "2. Avacados at 200 a crate\n";    // mangoes, avacados, pineapples, 
+        $response .= "3. Pineaple at 200 a crate\n"; //kales, tomatoes, onions
+        $response .= "4. Oranges at 200 a crate\n"; //kales, tomatoes, onions
+     
+    
+    }
+   
 
 
 
 } else if ($text == "3") {
     // This is a terminal request. Note how we start the response with END
-    $response = "CON Select am Item to continue\n";
-    $response .= "1. Tomatoes\n"; //maize, beans, millet, sorhum
-    $response .= "2. Kales\n";    // mangoes, avacados, pineapples, 
-    $response .= "3. Sppinach\n"; //kales, tomatoes, onions
-    $response .= "4. Carrot\n"; //kales, tomatoes, onions
+  
+
+
+    if($phoneNumber == "+254794940160"){ //farmere third  menu
+        $response = "CON Select am Item to continue\n";
+        $response .= "1. Tomatoes\n"; //maize, beans, millet, sorhum
+        $response .= "2. Kales\n";    // mangoes, avacados, pineapples, 
+        $response .= "3. Sppinach\n"; //kales, tomatoes, onions
+        $response .= "4. Carrot\n"; //kales, tomatoes, onions
+    
+    
+    
+    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+        $response  = "END Account Deacticated successfully\n";
+       
+    
+    }else if($phoneNumber == "+254748804536"){ //buyer
+        $response  = "CON select an option to continue \n";
+        $response .= "1. onions a kg @ 100\n"; //maize, beans, millet, sorhum
+        $response .= "2. Tomatoes a kg @ 100\n";    // mangoes, avacados, pineapples, 
+        $response .= "2. carrots a kg @ 20\n"; //kales, tomatoes, onions
+     
+    
+    }
 
 
 
@@ -62,23 +133,102 @@ else if($number > 0){
     // print($level);
     if($level == "1"){//create event
         if($number == 2){ //genereate payment link and send it ot the user         
-             $response = "CON Ente number of KGs available";
+            if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "CON Enter amont of KGs";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "CON Enter the numer of KGs \n";
+               
+             
+            
+            }
+        
         }else if($number == 3 ){
-            $response = "CON Enter the selling price per KG";
+            if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "CON Enter selling price per kg";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "END Your order has been received succeffult\our agent will contact you \n";
+               
+             
+            
+            }
         }  
         else if($number == 4){
-            $response = "END  Your request has been received successfully";
+            if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "END your request has been received succefully";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "END Your order has been received succeffult\our agent will contact you \n";
+               
+             
+            
+            }
         }else{
             $response = "END invalid input";
         }     
         
 
-    }else if($level == "2"){//send fruits
+    }else if($level == "2"){//second level ie 3*1
         if($number == 2){ //genereate payment link and send it ot the user 
             if($number == 2){ //genereate payment link and send it ot the user         
-                $response = "CON Ente number of Krates available";
+                
+                if($phoneNumber == "+254794940160"){ //farmere third  menu
+                    $response  = "END Enter number of crates\n";
+                   
+                
+                
+                
+                }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                    $response  = "END Account updated sucessfully\n";
+                   
+                
+                }else if($phoneNumber == "+254748804536"){ //buyer
+                    $response  = "END Enter number of crate";
+                   
+                 
+                
+                }
            }else if($number == 3 ){
-               $response = "CON Enter the selling price per Krate";
+            //    $response = "CON Enter the selling price per Krate";
+               if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "END your request has been received succefully";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "END Your order has been received succeffult\our agent will contact you \n";
+               
+             
+            
+            }
+               
            }  
            else if($number == 4){
                $response = "END  Your request has been received successfully";
@@ -90,9 +240,27 @@ else if($number > 0){
         }else if($number == 3){ //initiate pull request to the given phone number
             // do nothing ,,
             if($number == 2){ //genereate payment link and send it ot the user         
-                $response = "CON Ente number of Krates available";
+                $response = "CON Enter number of Krates available";
            }else if($number == 3 ){
+               
                $response = "CON Enter the selling price per Krate";
+               if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "END your request has been received succefully";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "END Your order has been received succeffult\nour agent will contact you \n";
+               
+             
+            
+            }
+               
            }  
            else if($number == 4){
                $response = "END  Your request has been received successfully";
@@ -133,9 +301,41 @@ else if($number > 0){
 
     }else if($level == "3"){//vegetables
         if($number == 2){ //genereate payment link and send it ot the user         
-            $response = "CON Ente number of Krates available";
+            // $response = "CON Ente number of Krates available";
+            if($phoneNumber == "+254794940160"){ //farmere third  menu
+                $response = "CON Ente number of Krates available";
+               
+            
+            
+            
+            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                $response  = "END Account updated sucessfully\n";
+               
+            
+            }else if($phoneNumber == "+254748804536"){ //buyer
+                $response  = "END Enter number of Kgs";
+               
+             
+            
+            }
        }else if($number == 3 ){
-           $response = "CON Enter the selling price per Krate";
+           if($phoneNumber == "+254794940160"){ //farmere third  menu
+            $response = "CON Enter the selling price per Krate";
+
+           
+        
+        
+        
+        }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            $response  = "END Account updated sucessfully\n";
+           
+        
+        }else if($phoneNumber == "+254748804536"){ //buyer
+            $response  = "END Your order has been received sucessfully sucessfully\n";
+           
+         
+        
+        }
        }  
        else if($number == 4){
            $response = "END  Your request has been received successfully";
