@@ -23,7 +23,7 @@ if ($text == "") {
     $response .= "2. Fruits\n";    // mangoes, avacados, pineapples, 
     $response .= "3. Vegetable\n"; //kales, tomatoes, onions
 
-   }else if($phoneNumber == "+254720319532"){ //distributor accounut
+   }else if($phoneNumber == "+254713289622"){ //distributor accounut
     $response  = "CON Welcome to Farmlinks select an option to continue\n";
     $response .= "1. Edit Availability\n"; //maize, beans, millet, sorhum
     $response .= "2. Change Location\n";    // mangoes, avacados, pineapples, 
@@ -52,7 +52,7 @@ else if ($text == "1") {
     
     
     
-    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+    }else if($phoneNumber == "+254713289622"){ //distributor accounut
         $response  = "CON Enter your new Availability ie 2pm to  6 pm\n";
        
     
@@ -78,7 +78,7 @@ else if ($text == "1") {
     
     
     
-    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+    }else if($phoneNumber == "+254713289622"){ //distributor accounut
         $response  = "CON Enter new location county, constintuency\n";
        
     
@@ -109,7 +109,7 @@ else if ($text == "1") {
     
     
     
-    }else if($phoneNumber == "+254720319532"){ //distributor accounut
+    }else if($phoneNumber == "+254713289622"){ //distributor accounut
         $response  = "END Account Deacticated successfully\n";
        
     
@@ -139,7 +139,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -157,7 +157,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -175,7 +175,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -200,7 +200,7 @@ else if($number > 0){
                 
                 
                 
-                }else if($phoneNumber == "+254720319532"){ //distributor accounut
+                }else if($phoneNumber == "+254713289622"){ //distributor accounut
                     $response  = "END Account updated sucessfully\n";
                    
                 
@@ -218,7 +218,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -250,7 +250,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -308,7 +308,7 @@ else if($number > 0){
             
             
             
-            }else if($phoneNumber == "+254720319532"){ //distributor accounut
+            }else if($phoneNumber == "+254713289622"){ //distributor accounut
                 $response  = "END Account updated sucessfully\n";
                
             
@@ -326,7 +326,7 @@ else if($number > 0){
         
         
         
-        }else if($phoneNumber == "+254720319532"){ //distributor accounut
+        }else if($phoneNumber == "+254713289622"){ //distributor accounut
             $response  = "END Account updated sucessfully\n";
            
         
